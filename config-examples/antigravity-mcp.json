@@ -1,0 +1,15 @@
+{
+    "ssh-tools": {
+        "command": "python",
+        "args": [
+            "/ABSOLUTE/PATH/TO/ssh-mcp-server/ssh_mcp_server.py"
+        ],
+        "env": {
+            "SSH_HOST": "your.server.ip",
+            "SSH_USER": "ai-runner",
+            "SSH_KEY": "/home/you/.ssh/ai_runner",
+            "SSH_PORT": "22",
+            "COMMAND_TIMEOUT": "30"
+        }
+    }
+}
