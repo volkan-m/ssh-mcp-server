@@ -84,6 +84,14 @@ ALLOWED_COMMANDS = [
     # Custom application commands (Example)
     # r"^/opt/myapp/bin/status\.sh$",
     # r"^pm2 (list|status|logs .+ --lines \d+)$",
+
+    # UFW Firewall management
+    r"^ufw status( numbered| verbose)?$",
+    r"^ufw allow \d+/(tcp|udp)$",
+    r"^ufw allow from [\d./]+ to any port \d+ proto (tcp|udp)$",
+    r"^ufw deny \d+/(tcp|udp)$",
+    r"^ufw delete allow \d+/(tcp|udp)$",
+    r"^ufw reload$",
 ]
 
 # SSH connection info (read from environment variables)
